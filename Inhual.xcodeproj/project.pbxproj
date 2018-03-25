@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6F765DB6D2112EF9C3B033 /* libPods-Inhual.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8115134BE5211AFE412FDD96 /* libPods-Inhual.a */; };
+		CD60C1DB20685EAC007B5FB8 /* IHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD60C1DA20685EAC007B5FB8 /* IHNetworkManager.m */; };
 		CD649D3F2067874A00897CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD649D3E2067874A00897CBC /* main.m */; };
 		CD649D6020678C7A00897CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD649D5420678C7A00897CBC /* AppDelegate.m */; };
 		CD649D6720678C8200897CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD649D6220678C8200897CBC /* Assets.xcassets */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F4FDF36E35251E670E4FD00 /* Pods-Inhual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inhual.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inhual/Pods-Inhual.release.xcconfig"; sourceTree = "<group>"; };
+		8115134BE5211AFE412FDD96 /* libPods-Inhual.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Inhual.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD60C1D920685EAC007B5FB8 /* IHNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHNetworkManager.h; sourceTree = "<group>"; };
+		CD60C1DA20685EAC007B5FB8 /* IHNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHNetworkManager.m; sourceTree = "<group>"; };
 		CD649D2C2067874A00897CBC /* Inhual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inhual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD649D3D2067874A00897CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD649D3E2067874A00897CBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +53,7 @@
 		CD649D7D20678E0600897CBC /* IHAssignmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHAssignmentViewController.m; sourceTree = "<group>"; };
 		CD649D7F20678E1C00897CBC /* IHPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHPersonalInfoViewController.h; sourceTree = "<group>"; };
 		CD649D8020678E1C00897CBC /* IHPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHPersonalInfoViewController.m; sourceTree = "<group>"; };
+		EEC10B2DC1EFA85FB12BA337 /* Pods-Inhual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inhual.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inhual/Pods-Inhual.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6F765DB6D2112EF9C3B033 /* libPods-Inhual.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22D81A0021E24A92509C18E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8115134BE5211AFE412FDD96 /* libPods-Inhual.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD649D232067874A00897CBC = {
 			isa = PBXGroup;
 			children = (
 				CD649D2E2067874A00897CBC /* Inhual */,
 				CD649D2D2067874A00897CBC /* Products */,
+				E48E165CC4FFEDFF38ABDD5C /* Pods */,
+				22D81A0021E24A92509C18E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +145,8 @@
 		CD649D5120678C7A00897CBC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CD60C1D920685EAC007B5FB8 /* IHNetworkManager.h */,
+				CD60C1DA20685EAC007B5FB8 /* IHNetworkManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -250,6 +270,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		E48E165CC4FFEDFF38ABDD5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEC10B2DC1EFA85FB12BA337 /* Pods-Inhual.debug.xcconfig */,
+				6F4FDF36E35251E670E4FD00 /* Pods-Inhual.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD649D422067874A00897CBC /* Build configuration list for PBXNativeTarget "Inhual" */;
 			buildPhases = (
+				C0E3C291EB87E6E3B3F6056F /* [CP] Check Pods Manifest.lock */,
 				CD649D282067874A00897CBC /* Sources */,
 				CD649D292067874A00897CBC /* Frameworks */,
 				CD649D2A2067874A00897CBC /* Resources */,
+				7FDEE963E3882BC69A94FDDA /* [CP] Embed Pods Frameworks */,
+				95922207132E5A26CFC35C64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,6 +348,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FDEE963E3882BC69A94FDDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inhual/Pods-Inhual-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95922207132E5A26CFC35C64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inhual/Pods-Inhual-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E3C291EB87E6E3B3F6056F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Inhual-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD649D282067874A00897CBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -325,6 +408,7 @@
 				CD649D7220678DB100897CBC /* IHBaseViewController.m in Sources */,
 				CD649D7820678DEA00897CBC /* IHNewsViewController.m in Sources */,
 				CD649D7E20678E0600897CBC /* IHAssignmentViewController.m in Sources */,
+				CD60C1DB20685EAC007B5FB8 /* IHNetworkManager.m in Sources */,
 				CD649D6F20678D7800897CBC /* IHNavigationController.m in Sources */,
 				CD649D7B20678DF400897CBC /* IHPlanViewController.m in Sources */,
 				CD649D6020678C7A00897CBC /* AppDelegate.m in Sources */,
@@ -462,6 +546,7 @@
 		};
 		CD649D432067874A00897CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC10B2DC1EFA85FB12BA337 /* Pods-Inhual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +561,7 @@
 		};
 		CD649D442067874A00897CBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4FDF36E35251E670E4FD00 /* Pods-Inhual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
