@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  IHPlanViewController.h
 //  Inhual
 //
 //  Created by PatrickY on 2018/3/25.
 //  Copyright © 2018年 runsen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "IHBaseViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface IHPlanViewController : IHBaseViewController
 
 @end
-
